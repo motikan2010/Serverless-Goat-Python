@@ -3,8 +3,8 @@ Transform: AWS::Serverless-2016-10-31
 
 Globals:
   Function:
-    Runtime: nodejs8.10
-    Handler: index.handler
+    Runtime: python3.6
+    Handler: lambda_function.lambda_handler
     MemorySize: 3008
     Timeout: 10
 
@@ -51,6 +51,7 @@ Resources:
         WebsiteConfiguration:
           IndexDocument: index.html
           ErrorDocument: index.html
+
 Outputs:
     WebsiteURL:
       Description: 'Website URL'
