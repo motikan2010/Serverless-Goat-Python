@@ -1,4 +1,4 @@
-**This repository contains a Python adoption of the original [OWASP Serverless Goat](https://github.com/OWASP/Serverless-Goat) application.**
+**This repository contains a Python 3.6 adoption of the original [OWASP Serverless Goat](https://github.com/OWASP/Serverless-Goat) application.**
 
 ## Introduction ##
 Thank you for using OWASP ServerlessGoat!
