@@ -1,6 +1,6 @@
 # Serverless Goat Python
 
-**This repository contains a Python adoption of the original [OWASP Serverless Goat](https://github.com/OWASP/Serverless-Goat) application.**
+**This repository contains a Python 3.9 adoption of the original [OWASP Serverless Goat](https://github.com/OWASP/Serverless-Goat) application.**
 
 ## Using
 
